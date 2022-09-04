@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #fff599;
+        }
+        img{
+            float: left;
+            width: 200px;
+            height: 200px;
+            }
+        button{
+            background: hotpink;
+            float: right;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-left: 50px;
+        }
+        button:hover {background-color: hotpink}
+
+        button:active {
+              background-color: hotpink;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+        }
+        form{
+            background-color: pink;
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            left: 450px;
+            top: 150px;
+            display: inline-grid;
+            text-align: center;
+
+
+        }
+        body > form >a>button{
+            height: 50px;
+            margin-right: 45px;
+
+        }
+        body > a > button{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+{% load static %}
+<img src="{% static 'logo.png' %}" alt="My image">
+
+
+    <form>
+        <h1>Најава</h1>
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+
+  <!-- Email input -->
+        <div>
+            <label class="form-label" for="form3Example3">Е-пошта:</label>
+            <input type="email" id="form3Example3" class="form-control" />
+        </div>
+  <!-- Password input -->
+        <div>
+            <label class="form-label" for="form3Example4">Лозинка:</label>
+            <input type="password" id="form3Example4" class="form-control" />
+        </div>
+
+  <!-- Submit button -->
+        <a href="./pocetna"><button type="button" class="btn btn-danger">Логирај се</button></a>
+
+
+</form>
+
+
+
+
+
+<a href="./home"><button type="button" class="btn btn-success">Назад</button> </a>
+
+</body>
+</html>

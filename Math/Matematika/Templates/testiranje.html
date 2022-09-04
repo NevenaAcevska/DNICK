@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #fff599;
+        }
+        img{
+            float: left;
+            width: 200px;
+            height: 200px;
+            }
+        button{
+            background: #ff69b4;
+            float: right;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-left: 50px;
+        }
+        button:hover {background-color: hotpink}
+
+        button:active {
+              background-color: hotpink;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+        }
+        form{
+            padding-top: 50px;
+            background-color: pink;
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            display: inline-grid;
+            text-align: center;
+            clear: both;
+
+
+        }
+        body > a > button{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+
+        }
+        body > a:nth-child(3) > form > button{
+            margin-bottom: 50px;
+            margin-right: 45px;
+            padding-bottom: 15px;
+            position: absolute;
+           right: -15px;
+            bottom: 40px;
+            width: 150px;
+            height: 50px;
+            clear: both;
+        }
+        #gotovo{
+             margin-bottom: 50px;
+            margin-right: 45px;
+            padding-bottom: 15px;
+            position: absolute;
+           right: -15px;
+            bottom: -20px;
+            width: 150px;
+            height: 50px;
+            clear: both;
+        }
+
+        #test{
+            position: absolute;
+            top: 10px;
+            right: 350px;
+            width: 510px;
+            height: 50px;
+        }
+        p{
+            background: hotpink;
+            position: absolute;
+            float: right;
+            display: block;
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-left: 50px;
+            clear: both;
+            right: 50px;
+            top:-15px;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            position: absolute;
+            top: 5px;
+            right: 50%;
+            left: 50%;
+        }
+
+        #prasanje{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 150px;
+
+            top: 120px;
+
+        }
+        #odgovor{
+            position: absolute;
+            bottom: 30px;
+            left: 250px;
+        }
+        .odgovor{
+             position: absolute;
+            bottom: 30px;
+            left: 180px;
+        }
+    </style>
+</head>
+
+<body>
+{% load static %}
+<img src="{% static 'logo.png' %}" alt="My image">
+<a href="./test"><button type="button" id="test">Тестирај сe</button><a/>
+
+<p> ниво 0 </br> тема 1</p>
+
+<form>
+
+    <h1> Тест</h1>
+
+    <img src="{% static 'prasanje.png' %}" id="prasanje" >
+    <label class="odgovor">Одговор:</label><input type="text" id="odgovor">
+    <button type="button" class="btn btn-danger">Следно</button>
+    <a href="./rezt"> <button type="button" id="gotovo">Заврши</button></a>
+
+
+
+</form>
+
+
+
+
+<a href="./pocetna"><button type="button" class="btn btn-success">Назад</button> </a>
+
+
+
+</body>
+</html>

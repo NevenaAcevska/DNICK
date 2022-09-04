@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #fff599;
+        }
+        img{
+            position: absolute;
+            left: 400px;
+            width: 700px;
+            height: 700px;
+
+
+        }
+        button{
+            background: hotpink;
+            float: right;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-left: 50px;
+        }
+
+        button:hover {background-color: hotpink}
+        .Register a {
+            color: white;
+            text-decoration: none;
+
+        }
+        .Login a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        button:active {
+              background-color: hotpink;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div>
+    <a href="./registration"><button type="button" class="Register" >Регистрација</button></a>
+    <a href="./login"><button type="button" class="Login">Најава</button></a>
+</div>
+
+    {% load static %}
+<img src="{% static 'logo.png' %}" alt="My image">
+
+
+</body>
+</html>
